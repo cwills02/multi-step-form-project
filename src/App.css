@@ -15,7 +15,7 @@
 }
 
 .image-container {
-  background-image: url("https://assets.codepen.io/6060109/form-stage-1.png");
+  /* background-image: url("https://assets.codepen.io/6060109/form-stage-1.png"); */
   width: 50%;
   height: 100vh;
   background-size: cover;
