@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   const images = ["https://assets.codepen.io/6060109/form-stage-1.png", "https://assets.codepen.io/6060109/form-stage-2.png", "https://assets.codepen.io/6060109/form-stage-3.png", "https://assets.codepen.io/6060109/form-stage-4.png"];
 
-  const [stage, setStage] = useState(1)
+  const [stage, setStage] = useState(0)
 
   const handleClick = () => {
     const currentStage = stage;
@@ -17,12 +17,13 @@ function App() {
       newStage = currentStage + 1;
     }
     setStage(newStage);
-    console.log(newStage);
   }
 
   return (
     <div className="App">
-      <LeftContainer handleClick={handleClick} />
+      <LeftContainer handleClick={handleClick} 
+      stage={stage}
+      />
       <RightContainer stage={stage} 
       images={images}
       />

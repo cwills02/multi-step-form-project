@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body {
+  font-family: Roboto;
+}
+
 .App {
   display: flex;
+  text-align: center;
 }
 
 .form-container {
@@ -22,8 +29,54 @@
   background-repeat: no-repeat;
 }
 
-button {
-  margin-top: 10px;
+.email {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  border-bottom: 1px solid white;
+  padding: 20px;
+}
+
+.email::placeholder {
+  color: white;
+}
+
+.next-button {
+  margin-top: 20px;
+  background-color: white;
+  color: #745E5E;
+  font-size: 15px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.stage-2-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stage-2-button {
+  font-size: 15px;
+  padding: 5px 10px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.stage-2-button-active {
+  color: #745E5E;
+  background-color: white;
+}
+
+.stage-2-input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  border-bottom: 1px solid white;
+  padding: 20px;
 }
 
 
